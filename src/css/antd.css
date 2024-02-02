@@ -1,0 +1,21 @@
+.ant-select * {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.ant-select-selector {
+    border: 1px solid #e0e1e7 !important;
+}
+
+.ant-select-open .ant-select-selector {
+    border: 1px solid #E70A32 !important;
+    box-shadow: 0px 0px 0px #E70A32 !important;
+}
+
+.ant-select-focused .ant-select-selector {
+    box-shadow: 0px 0px 0px #E70A32 !important;
+}
+
+.ant-select-item-option-active,
+.ant-select-item-option-selected {
+    background: rgba(224, 225, 231, 0.4) !important;
+}
