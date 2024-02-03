@@ -75,7 +75,7 @@ const Header = () => {
                     </div>
 
 
-                    <div className="flex items-center gap-8 z-20">
+                    <div className="flex items-center gap-8 z-20 max-410:gap-6">
                         {/* search */}
                         <button title='search' aria-label='search button'>
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
