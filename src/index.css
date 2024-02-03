@@ -2,6 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .hamburger-btn {
+    @apply hidden max-768:block !z-30;
+  }
+
+  .hamburger-btn_items-wrapper {
+    @apply flex items-center flex-col justify-center relative w-7 h-7;
+    transition: transform 0.4s ease;
+  }
+
+  .hamburger-btn_item {
+    @apply inline-block absolute w-full h-0.5 bg-white rounded-full;
+    transition: transform 0.2s linear;
+  }
+
+  .hamburger-btn_item:nth-child(1) {
+    transform: translateY(8px);
+  }
+
+  .hamburger-btn_item:nth-child(3) {
+    transform: translateY(-8px);
+  }
+
+  /* active hamburger button */
+  .hamburger-btn-active .hamburger-btn_items-wrapper {
+    transform: rotate(135deg);
+  }
+
+  .hamburger-btn-active .hamburger-btn_item:nth-child(1) {
+    transform: translateY(0) rotate(180deg);
+  }
+
+  .hamburger-btn-active .hamburger-btn_item:nth-child(2) {
+    transform: rotate(90deg);
+  }
+
+  .hamburger-btn-active .hamburger-btn_item:nth-child(3) {
+    transform: translateY(0) rotate(90deg);
+  }
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
