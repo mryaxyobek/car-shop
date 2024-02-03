@@ -109,9 +109,9 @@ const Header = () => {
                             }}
                         >
                             <span className='hamburger-btn_items-wrapper'>
-                                <span className="hamburger-btn_item"></span>
-                                <span className="hamburger-btn_item"></span>
-                                <span className="hamburger-btn_item"></span>
+                                <span className={`hamburger-btn_item ${(isHome) ? '' : (openNavbar ? 'bg-white' : '!bg-111')}`}></span>
+                                <span className={`hamburger-btn_item ${(isHome) ? '' : (openNavbar ? 'bg-white' : '!bg-111')}`}></span>
+                                <span className={`hamburger-btn_item ${(isHome) ? '' : (openNavbar ? 'bg-white' : '!bg-111')}`}></span>
                             </span>
                         </button>
 
